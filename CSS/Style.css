@@ -1,0 +1,215 @@
+/* CSS RESET */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* body{
+    background-color: red;
+} */
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Style the navbar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative; 
+    top: 0px;
+}
+
+/* navigation bar: logo and image */
+#logo{    
+    margin: 0px 35px;
+}
+
+/* logo image */
+#logo img{    
+    height:60px;
+    margin: 4px 10px;
+
+}
+
+/* Navigations bar : list styling */
+#navbar ul{
+    display: flex;
+ 
+}
+
+#navbar::before{
+    content: " ";
+    background-color: black;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 3px 30px;
+    border-radius: 20px;
+    color: white;
+}
+
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+}
+
+/* home sections */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 0px  200px;
+    justify-content: center;
+    align-items: center;
+    height: 540px;
+    
+}
+#home::before{
+    content: " ";
+    background:url('../img/biryani.jpeg') no-repeat center center/cover;
+    height: 90%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.89;    
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    
+}
+
+#home p{
+    color: white;
+    font-size: 1.3rem;
+    text-align: center;
+}
+/* services sections */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    /* border: 2px solid brown; */
+    padding: 34px;
+    margin: 3px 30px;
+    border-radius: 28px;
+    background: rgb(212, 211, 211);
+    margin: bottom 20px; 
+}
+
+#services .box img{
+    height: 160px;
+    display: block;
+    margin:auto;
+}
+
+
+
+/* Clients section */
+#client-section{
+height: 400px;
+position: relative;
+}
+#client-section::before{
+content: " ";
+position: absolute;
+background: url('../img/biryani.jpeg') no-repeat center center/cover;
+width: 100%;
+height: 100%;
+z-index: -1;
+opacity: 0.3;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-items{
+padding: 34px ;
+}
+#clients img{
+    height: 125px;
+}
+/* Sections contact */
+#contact{
+    position: relative;
+    /* height: 550px; */
+}
+#contact::before{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    background: url("../img/contact3.jpg") no-repeat center center/cover;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact input,
+#contact textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    border: none;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.4rem;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+}
+
+/* utility classes */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px ;
+}
+.h-secondary{ 
+    font-size: 2.3rem;
+    padding: 12px ;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    font-size: 1.5rem;
+    color: white;
+    box-shadow: 5px 5px cornflowerblue;
+    margin: 17px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
